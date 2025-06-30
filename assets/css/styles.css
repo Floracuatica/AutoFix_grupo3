@@ -27,6 +27,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.servicios h2 {
+  text-align: center;
+}
 
 form {
   max-width: 600px;
