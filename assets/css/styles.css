@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.servicio {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #198754;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .servicio {
+    width: 100%;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+}
