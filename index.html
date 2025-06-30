@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoFix - Reparación de Vehículos a Domicilio</title>
+  <link rel="stylesheet" href="style.css"> <!-- opcional si harás CSS -->
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .servicios, .formulario { margin-bottom: 40px; }
+    .servicio { border: 1px solid #ccc; padding: 20px; display: inline-block; margin-right: 10px; width: 200px; text-align: center; }
+    input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; }
+    button { padding: 10px 20px; background-color: #198754; color: white; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>AutoFix - Reparación de Vehículos a Domicilio</h1>
+
+  <section class="servicios">
+    <h2>Servicios y Precios</h2>
+    <div class="servicio">
+      <img src="assets/img/aceite.jpg" alt="Cambio de aceite" width="100">
+      <p><strong>Cambio de aceite</strong><br>Precio: $500 MXN</p>
+    </div>
+    <div class="servicio">
+      <img src="assets/img/frenos.jpg" alt="Revisión de frenos" width="100">
+      <p><strong>Revisión de frenos</strong><br>Precio: $700 MXN</p>
+    </div>
+    <div class="servicio">
+      <img src="assets/img/diagnostico.jpg" alt="Diagnóstico eléctrico" width="100">
+      <p><strong>Diagnóstico eléctrico</strong><br>Precio: $600 MXN</p>
+    </div>
+  </section>
+
+  <section class="formulario">
+    <h2>Solicitar Reparación</h2>
+    <form>
+      <label>Nombre del Cliente</label>
+      <input type="text" name="cliente" required>
+
+      <label>Tipo de Reparación</label>
+      <select name="servicio" required>
+        <option value="">Selecciona un servicio</option>
+        <option value="aceite">Cambio de aceite</option>
+        <option value="frenos">Revisión de frenos</option>
+        <option value="diagnostico">Diagnóstico eléctrico</option>
+      </select>
+
+      <label>Descripción</label>
+      <textarea name="descripcion"></textarea>
+
+      <label>Agendar Cita</label>
+      <input type="date" name="fecha" required>
+
+      <h3>Información de Pago (simulado)</h3>
+      <input type="text" placeholder="**** **** **** 1234" name="tarjeta">
+      <input type="text" placeholder="Nombre del titular" name="titular">
+      <input type="text" placeholder="CVV" name="cvv">
+
+      <button type="submit">Confirmar Solicitud</button>
+    </form>
+  </section>
+
+</body>
+</html>
